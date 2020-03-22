@@ -1,0 +1,82 @@
+<VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name Package="{164B10B9-B200-11D0-8C61-00A0C91E29D5}" ID="3150" />
+    <Description Package="{164B10B9-B200-11D0-8C61-00A0C91E29D5}" ID="3151" />
+    <Icon Package="{164B10B9-B200-11D0-8C61-00A0C91E29D5}" ID="4580" />
+    <ProjectType>VisualBasic</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MyMovieCollection</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent BuildOnLoad="true">
+    <Project File="MyMovieCollection.vbproj" ReplaceParameters="true">
+
+      <ProjectItem ReplaceParameters="false">DVDCollectionDatabase.mdf</ProjectItem>
+      <ProjectItem ReplaceParameters="false">DVDCollectionDatabase_log.ldf</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >DVDCollectionDataSet.xsd</ProjectItem>
+      <ProjectItem ReplaceParameters="false">DVDCollectionDataSet.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >DVDCollectionDataSet.Designer.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >ListDetails.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >ListDetails.Designer.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">ListDetails.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="false">MainForm.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >MainForm.Designer.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">MainForm.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="false">SearchOnline.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >SearchOnline.Designer.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">SearchOnline.resx</ProjectItem>
+
+      <ProjectItem ReplaceParameters="false">Controls\Dvd.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Controls\RatingPicker.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Controls\RatingPicker.Designer.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Controls\SimpleAmazonWS.vb</ProjectItem>
+
+      <ProjectItem ReplaceParameters="false" OpenOrder="10" OpenInWebBrowser="true">Documentation\Getting Started Tutorial.htm</ProjectItem>
+
+      <ProjectItem ReplaceParameters="false">Documentation\images\vbmyDVDMain.gif</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Documentation\images\top-vb.gif</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Documentation\images\topjump-vb.gif</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Documentation\images\side-vb.gif</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Documentation\images\vbmyDVDSearch.gif</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Documentation\images\vbmyDVDResources.gif</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true" >My Project\AssemblyInfo.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Application.myapp">My Project\MyApplication.myapp</ProjectItem>
+      <ProjectItem ReplaceParameters="true"  TargetFileName="Application.Designer.vb">My Project\MyApplication.Designer.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">My Project\Resources.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" >My Project\Resources.Designer.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="false">My Project\Settings.settings</ProjectItem>
+      <ProjectItem ReplaceParameters="true ">My Project\Settings.Designer.vb</ProjectItem>
+
+      <ProjectItem ReplaceParameters="true" >My Project\DataSources\DVD.datasource</ProjectItem>
+
+      <ProjectItem ReplaceParameters="false">Resources\Blue_fullBg-noSideText.jpg</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\button_addCollection.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\button_search_active.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\button_showDVD_L.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\button_showDVD_R.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\button_smallBlue_search.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\button_viewDvd_active.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\dvd-database.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\icon_magnifyingGlass.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\panel_dvdInfo_noTxt.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\PanelBG.jpg</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\PanelBG_Tile.jpg</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\Record.GIF</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\star-empty.png</ProjectItem>
+      <ProjectItem ReplaceParameters="false">Resources\star-filled.png</ProjectItem>
+    </Project>
+
+    <CustomParameters>
+      <CustomParameter Name="$XmlConvert_safeprojectname$" Value="" />
+    </CustomParameters>
+
+  </TemplateContent>
+
+  <WizardExtension>
+    <Assembly>Microsoft.VSDesigner, Version=8.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>Microsoft.VSDesigner.ProjectWizard.StarterKitVerifySqlExpressWizard</FullClassName>
+  </WizardExtension>
+
+</VSTemplate>

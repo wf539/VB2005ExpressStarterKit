@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>$safeprojectname$.My.MyApplication</StartupObject>
+    <RootNamespace>$safeprojectname$</RootNamespace>
+    <AssemblyName>$safeprojectname$</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$safeprojectname$.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$safeprojectname$.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ListDetails.Designer.vb">
+      <DependentUpon>ListDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListDetails.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchOnline.Designer.vb">
+      <DependentUpon>SearchOnline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchOnline.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DVDCollectionDataset.vb">
+      <DependentUpon>DVDCollectionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DVDCollectionDataset.Designer.vb">
+      <DependentUpon>DVDCollectionDataSet.xsd</DependentUpon>
+      <SubType>Form</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Controls\DVD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\SimpleAmazonWS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\RatingPicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RatingPicker.Designer.vb">
+      <DependentUpon>RatingPicker.vb</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DVDCollectionDatabase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DVDCollectionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DVDCollectionDataSet.Designer.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListDetails.resx">
+      <DependentUpon>ListDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchOnline.resx">
+      <DependentUpon>SearchOnline.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DVDCollectionDatabase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DVDCollectionDatabase.mdf</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+
+    <None Include="Documentation\Getting Started Tutorial.htm" />
+    <None Include="Documentation\images\vbmyDVDMain.gif" />
+    <None Include="Documentation\images\top-vb.gif" />
+    <None Include="Documentation\images\topjump-vb.gif" />
+    <None Include="Documentation\images\side-vb.gif" />
+    <None Include="Documentation\images\vbmyDVDSearch.gif" />
+    <None Include="Documentation\images\vbmyDVDResources.gif" />
+    <None Include="My Project\DataSources\DVD.datasource" />
+    <None Include="Resources\Record.GIF" />
+    <None Include="Resources\star-filled.png" />
+    <None Include="Resources\star-empty.png" />
+    <None Include="Resources\Blue_fullBg-noSideText.jpg" />
+    <None Include="Resources\button_addCollection.png" />
+    <None Include="Resources\button_search_active.png" />
+    <None Include="Resources\button_showDVD_L.png" />
+    <None Include="Resources\button_showDVD_R.png" />
+    <None Include="Resources\button_smallBlue_search.png" />
+    <None Include="Resources\button_viewDvd_active.png" />
+    <None Include="Resources\dvd-database.ico" />
+    <None Include="Resources\panel_dvdInfo_noTxt.png" />
+    <None Include="Resources\PanelBG.jpg" />
+    <None Include="Resources\PanelBG_Tile.jpg" />
+
+    <Content Include="Resources\icon_magnifyingGlass.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{AD028B85-FA21-41B1-AB4A-08672F633506}" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+
+ </Project>
